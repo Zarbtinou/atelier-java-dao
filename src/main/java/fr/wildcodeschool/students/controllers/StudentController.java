@@ -1,6 +1,6 @@
 package fr.wildcodeschool.students.controllers;
 
-import fr.wildcodeschool.students.Repositories.StudentDao;
+import fr.wildcodeschool.students.dao.StudentDao;
 
 import fr.wildcodeschool.students.models.Student;
 import org.springframework.beans.factory.annotation.Autowired;

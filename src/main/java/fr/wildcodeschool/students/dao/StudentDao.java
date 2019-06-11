@@ -1,4 +1,4 @@
-package fr.wildcodeschool.students.Repositories;
+package fr.wildcodeschool.students.dao;
 
 import fr.wildcodeschool.students.models.Student;
 

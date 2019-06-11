@@ -1,6 +1,7 @@
 package fr.wildcodeschool.students.Repositories;
 
 
+import fr.wildcodeschool.students.dao.StudentDao;
 import fr.wildcodeschool.students.models.Student;
 import org.springframework.stereotype.Repository;
 
