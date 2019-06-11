@@ -10,14 +10,14 @@ import java.util.List;
 
 
 @Repository
-public class StudentRepoT implements StudentDao {
+public class StudentRepoBdx implements StudentDao {
 
     public List<Student> findAll() {
 
         List<Student> students = new ArrayList<>();
-        students.add(new Student("Bernard"));
-        students.add(new Student("Hoagie"));
-        students.add(new Student("Laverne"));
+        students.add(new Student("Bob"));
+        students.add(new Student("Marley"));
+        students.add(new Student("ForEver"));
         return students;
     }
 }
