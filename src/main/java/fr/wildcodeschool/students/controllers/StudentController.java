@@ -17,13 +17,24 @@ public class StudentController {
 
     @Autowired
     @Qualifier("studentRepoBdx")
-    public StudentDao studentDao;
+    public StudentDao studentDaoBdx;
+
+    @Autowired
+    @Qualifier("studentRepoTls")
+    public StudentDao studentDaoTls;
 
     @ResponseBody
-    @GetMapping("/students")
-    public List<Student> getStudents() {
+    @GetMapping("/studentsBdx")
+    public List<Student> getStudentsBdx() {
 
-        return studentDao.findAll();
+        return studentDaoBdx.findAll();
+    }
+
+    @ResponseBody
+    @GetMapping("/studentsTls")
+    public List<Student> getStudentsTls() {
+
+        return studentDaoTls.findAll();
     }
 
 
